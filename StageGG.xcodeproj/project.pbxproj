@@ -55,11 +55,11 @@
 			isa = PBXGroup;
 			children = (
 				AE5E65DB2621172D0079CCB4 /* StageGGApp.swift */,
+				AE5E65EB26211CD70079CCB4 /* StageGGTabs.swift */,
 				AE5E65DD2621172D0079CCB4 /* ContentView.swift */,
 				AE5E65DF2621172F0079CCB4 /* Assets.xcassets */,
 				AE5E65E42621172F0079CCB4 /* Info.plist */,
 				AE5E65E12621172F0079CCB4 /* Preview Content */,
-				AE5E65EB26211CD70079CCB4 /* StageGGTabs.swift */,
 			);
 			path = StageGG;
 			sourceTree = "<group>";
