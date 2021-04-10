@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct RulesView: View {
+struct StageListView: View {
     var body: some View {
-        Text("Hello, Rules!")
+        Text("Hello, Stage Selector!")
     }
 }
 
 struct RulesView_Previews: PreviewProvider {
     static var previews: some View {
-        RulesView()
+        StageListView()
     }
 }

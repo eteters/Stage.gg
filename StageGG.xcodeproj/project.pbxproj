@@ -12,7 +12,7 @@
 		AE5E65E32621172F0079CCB4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE5E65E22621172F0079CCB4 /* Preview Assets.xcassets */; };
 		AE5E65EC26211CD70079CCB4 /* StageGGTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E65EB26211CD70079CCB4 /* StageGGTabs.swift */; };
 		AE5E65EF26214F370079CCB4 /* StageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E65EE26214F370079CCB4 /* StageView.swift */; };
-		AE5E65F226214F760079CCB4 /* RulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E65F126214F760079CCB4 /* RulesView.swift */; };
+		AE5E65F226214F760079CCB4 /* StageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E65F126214F760079CCB4 /* StageListView.swift */; };
 		AE5E65F6262152720079CCB4 /* StageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E65F5262152720079CCB4 /* StageRow.swift */; };
 		AE5E65FA262158D60079CCB4 /* StageModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E65F9262158D60079CCB4 /* StageModels.swift */; };
 /* End PBXBuildFile section */
@@ -25,7 +25,7 @@
 		AE5E65E42621172F0079CCB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE5E65EB26211CD70079CCB4 /* StageGGTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageGGTabs.swift; sourceTree = "<group>"; };
 		AE5E65EE26214F370079CCB4 /* StageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageView.swift; sourceTree = "<group>"; };
-		AE5E65F126214F760079CCB4 /* RulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesView.swift; sourceTree = "<group>"; };
+		AE5E65F126214F760079CCB4 /* StageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageListView.swift; sourceTree = "<group>"; };
 		AE5E65F5262152720079CCB4 /* StageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageRow.swift; sourceTree = "<group>"; };
 		AE5E65F9262158D60079CCB4 /* StageModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,8 +62,8 @@
 			children = (
 				AE5E65F8262158B00079CCB4 /* Models */,
 				AE5E66192621E5600079CCB4 /* App */,
-				AE5E661A2621E56C0079CCB4 /* Stages */,
-				AE5E661B2621E57B0079CCB4 /* Rules(StageSelect) */,
+				AE5E661A2621E56C0079CCB4 /* Stage Info and Bans */,
+				AE5E661B2621E57B0079CCB4 /* StageList */,
 				AE5E65DF2621172F0079CCB4 /* Assets.xcassets */,
 				AE5E65E42621172F0079CCB4 /* Info.plist */,
 				AE5E65E12621172F0079CCB4 /* Preview Content */,
@@ -96,21 +96,21 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		AE5E661A2621E56C0079CCB4 /* Stages */ = {
+		AE5E661A2621E56C0079CCB4 /* Stage Info and Bans */ = {
 			isa = PBXGroup;
 			children = (
 				AE5E65EE26214F370079CCB4 /* StageView.swift */,
 				AE5E65F5262152720079CCB4 /* StageRow.swift */,
 			);
-			path = Stages;
+			path = "Stage Info and Bans";
 			sourceTree = "<group>";
 		};
-		AE5E661B2621E57B0079CCB4 /* Rules(StageSelect) */ = {
+		AE5E661B2621E57B0079CCB4 /* StageList */ = {
 			isa = PBXGroup;
 			children = (
-				AE5E65F126214F760079CCB4 /* RulesView.swift */,
+				AE5E65F126214F760079CCB4 /* StageListView.swift */,
 			);
-			path = "Rules(StageSelect)";
+			path = StageList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,7 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE5E65FA262158D60079CCB4 /* StageModels.swift in Sources */,
-				AE5E65F226214F760079CCB4 /* RulesView.swift in Sources */,
+				AE5E65F226214F760079CCB4 /* StageListView.swift in Sources */,
 				AE5E65EF26214F370079CCB4 /* StageView.swift in Sources */,
 				AE5E65EC26211CD70079CCB4 /* StageGGTabs.swift in Sources */,
 				AE5E65DC2621172D0079CCB4 /* StageGGApp.swift in Sources */,
