@@ -15,7 +15,6 @@ struct StageView: View {
             Text("Hello, Stage2!")
                 .padding()
         }
-        
     }
 }
 

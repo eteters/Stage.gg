@@ -13,6 +13,8 @@
 		AE5E65EC26211CD70079CCB4 /* StageGGTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E65EB26211CD70079CCB4 /* StageGGTabs.swift */; };
 		AE5E65EF26214F370079CCB4 /* StageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E65EE26214F370079CCB4 /* StageView.swift */; };
 		AE5E65F226214F760079CCB4 /* RulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E65F126214F760079CCB4 /* RulesView.swift */; };
+		AE5E65F6262152720079CCB4 /* StageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E65F5262152720079CCB4 /* StageRow.swift */; };
+		AE5E65FA262158D60079CCB4 /* StageModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E65F9262158D60079CCB4 /* StageModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		AE5E65EB26211CD70079CCB4 /* StageGGTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageGGTabs.swift; sourceTree = "<group>"; };
 		AE5E65EE26214F370079CCB4 /* StageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageView.swift; sourceTree = "<group>"; };
 		AE5E65F126214F760079CCB4 /* RulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesView.swift; sourceTree = "<group>"; };
+		AE5E65F5262152720079CCB4 /* StageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageRow.swift; sourceTree = "<group>"; };
+		AE5E65F9262158D60079CCB4 /* StageModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,11 @@
 		AE5E65DA2621172D0079CCB4 /* StageGG */ = {
 			isa = PBXGroup;
 			children = (
+				AE5E65F8262158B00079CCB4 /* Models */,
 				AE5E65DB2621172D0079CCB4 /* StageGGApp.swift */,
 				AE5E65EB26211CD70079CCB4 /* StageGGTabs.swift */,
 				AE5E65EE26214F370079CCB4 /* StageView.swift */,
+				AE5E65F5262152720079CCB4 /* StageRow.swift */,
 				AE5E65F126214F760079CCB4 /* RulesView.swift */,
 				AE5E65DF2621172F0079CCB4 /* Assets.xcassets */,
 				AE5E65E42621172F0079CCB4 /* Info.plist */,
@@ -73,6 +79,14 @@
 				AE5E65E22621172F0079CCB4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AE5E65F8262158B00079CCB4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE5E65F9262158D60079CCB4 /* StageModels.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,10 +158,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE5E65FA262158D60079CCB4 /* StageModels.swift in Sources */,
 				AE5E65F226214F760079CCB4 /* RulesView.swift in Sources */,
 				AE5E65EF26214F370079CCB4 /* StageView.swift in Sources */,
 				AE5E65EC26211CD70079CCB4 /* StageGGTabs.swift in Sources */,
 				AE5E65DC2621172D0079CCB4 /* StageGGApp.swift in Sources */,
+				AE5E65F6262152720079CCB4 /* StageRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
