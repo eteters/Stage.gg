@@ -9,13 +9,18 @@ import SwiftUI
 
 struct StageView: View {
     var body: some View {
-        Text("Hello, Stage!")
-            .padding()
+        VStack {
+            Text("Hello, Stage1!")
+                .padding()
+            Text("Hello, Stage2!")
+                .padding()
+        }
+        
     }
 }
 
 struct StageView_Preview: PreviewProvider {
     static var previews: some View {
-        RulesView()
+        StageView()
     }
 }
