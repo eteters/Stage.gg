@@ -7,13 +7,15 @@
 
 import SwiftUI
 
+// TODO make stagerow look correct
+
 struct StageRow: View {
     var body: some View {
         HStack {
             // Image
             Image(uiImage: UIImage(named: "fd_stage_image")!).resizable()
                 .frame(height: 112)
-            // image asset for check
+            // image asset for check?
             
         }
     }

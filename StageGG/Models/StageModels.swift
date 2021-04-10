@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// TODO: Add all the StageInfo we want 
+
 struct Stage {
     var id: Int
     var name: String

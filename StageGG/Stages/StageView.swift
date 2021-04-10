@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+// TODO make Vstack into a scrollable list of items that can be tapped
+// StageView should take in a list or an object with a list on it 
+
 struct StageView: View {
     var body: some View {
         VStack {

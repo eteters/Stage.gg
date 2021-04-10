@@ -61,11 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				AE5E65F8262158B00079CCB4 /* Models */,
-				AE5E65DB2621172D0079CCB4 /* StageGGApp.swift */,
-				AE5E65EB26211CD70079CCB4 /* StageGGTabs.swift */,
-				AE5E65EE26214F370079CCB4 /* StageView.swift */,
-				AE5E65F5262152720079CCB4 /* StageRow.swift */,
-				AE5E65F126214F760079CCB4 /* RulesView.swift */,
+				AE5E66192621E5600079CCB4 /* App */,
+				AE5E661A2621E56C0079CCB4 /* Stages */,
+				AE5E661B2621E57B0079CCB4 /* Rules(StageSelect) */,
 				AE5E65DF2621172F0079CCB4 /* Assets.xcassets */,
 				AE5E65E42621172F0079CCB4 /* Info.plist */,
 				AE5E65E12621172F0079CCB4 /* Preview Content */,
@@ -87,6 +85,32 @@
 				AE5E65F9262158D60079CCB4 /* StageModels.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		AE5E66192621E5600079CCB4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AE5E65DB2621172D0079CCB4 /* StageGGApp.swift */,
+				AE5E65EB26211CD70079CCB4 /* StageGGTabs.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AE5E661A2621E56C0079CCB4 /* Stages */ = {
+			isa = PBXGroup;
+			children = (
+				AE5E65EE26214F370079CCB4 /* StageView.swift */,
+				AE5E65F5262152720079CCB4 /* StageRow.swift */,
+			);
+			path = Stages;
+			sourceTree = "<group>";
+		};
+		AE5E661B2621E57B0079CCB4 /* Rules(StageSelect) */ = {
+			isa = PBXGroup;
+			children = (
+				AE5E65F126214F760079CCB4 /* RulesView.swift */,
+			);
+			path = "Rules(StageSelect)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
