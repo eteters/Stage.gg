@@ -12,6 +12,8 @@ import SwiftUI
 struct Stage {
     var id: Int
     var name: String
+    
+    var isEnabled: Bool
 
     var stageInfo: StageInfo
 
@@ -20,21 +22,30 @@ struct Stage {
         Image(imageName)
     }
     
-    init(id:Int, name:String, stageInfo: StageInfo, imageName: String) {
+    init(id:Int, name:String, stageInfo: StageInfo, imageName: String, isEnabled: Bool = true) {
         self.id = id
         self.name = name
         self.stageInfo = stageInfo
         self.imageName = imageName
+        self.isEnabled = isEnabled
     }
 }
 
 struct StageInfo {
     var sizeClass: StageSizeClass
+    
+    var category: StageCategory
 }
 
 enum StageSizeClass {
     case Large
     case Medium
     case Small
+}
+
+enum StageCategory {
+    case Starters
+    case CounterPicks
+    case Other
 }
 
