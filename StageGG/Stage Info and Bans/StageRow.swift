@@ -11,12 +11,13 @@ import SwiftUI
 
 struct StageRow: View {
     
+    // Define the properties we need for a row
     struct Props {
         let id: Int
         let imageName: String
         var isBanned: Bool = false
     }
-    
+    // instance of our props
     var props: Props
     
     var body: some View {
@@ -25,8 +26,8 @@ struct StageRow: View {
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(height: 112)
-                
             
+            // note that the checkbox isn't passing up the ban state rn
             StageBanBox(isBanned: props.isBanned)
                 .padding()
         }
