@@ -11,6 +11,9 @@ import SwiftUI
 // StageView should take in a list or an object with a list on it 
 
 struct StageView: View {
+    
+    var stages: [Stage]
+    
     var body: some View {
         VStack {
             Text("Hello, Stage1!")
@@ -23,6 +26,6 @@ struct StageView: View {
 
 struct StageView_Preview: PreviewProvider {
     static var previews: some View {
-        StageView()
+        StageView(stages: stages)
     }
 }

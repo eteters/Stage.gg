@@ -8,14 +8,17 @@
 import SwiftUI
 
 struct StageGGTabs: View {
+    
+    var stages: [Stage]
+    
     var body: some View {
         TabView {
-            StageView()
+            StageView(stages: stages)
                 .tabItem {
                     Label("Stages & Bans", image: "Stage Icon Vector")
                 }
 
-            StageListView()
+            StageListView(stages: stages)
                 .tabItem {
                     Label("Stage List", systemImage: "list.bullet")
                 }
@@ -25,6 +28,6 @@ struct StageGGTabs: View {
 
 struct StageGGTabs_Previews: PreviewProvider {
     static var previews: some View {
-        StageGGTabs()
+        StageGGTabs(stages: stages)
     }
 }
