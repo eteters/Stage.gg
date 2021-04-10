@@ -15,6 +15,7 @@
 		AE5E65F226214F760079CCB4 /* StageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E65F126214F760079CCB4 /* StageListView.swift */; };
 		AE5E65F6262152720079CCB4 /* StageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E65F5262152720079CCB4 /* StageRow.swift */; };
 		AE5E65FA262158D60079CCB4 /* StageModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E65F9262158D60079CCB4 /* StageModels.swift */; };
+		AEC983CC26223B2F00C5520D /* StageBanBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC983CB26223B2F00C5520D /* StageBanBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		AE5E65F126214F760079CCB4 /* StageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageListView.swift; sourceTree = "<group>"; };
 		AE5E65F5262152720079CCB4 /* StageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageRow.swift; sourceTree = "<group>"; };
 		AE5E65F9262158D60079CCB4 /* StageModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageModels.swift; sourceTree = "<group>"; };
+		AEC983CB26223B2F00C5520D /* StageBanBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageBanBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				AE5E65EE26214F370079CCB4 /* StageView.swift */,
 				AE5E65F5262152720079CCB4 /* StageRow.swift */,
+				AEC983CB26223B2F00C5520D /* StageBanBox.swift */,
 			);
 			path = "Stage Info and Bans";
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				AE5E65FA262158D60079CCB4 /* StageModels.swift in Sources */,
 				AE5E65F226214F760079CCB4 /* StageListView.swift in Sources */,
 				AE5E65EF26214F370079CCB4 /* StageView.swift in Sources */,
+				AEC983CC26223B2F00C5520D /* StageBanBox.swift in Sources */,
 				AE5E65EC26211CD70079CCB4 /* StageGGTabs.swift in Sources */,
 				AE5E65DC2621172D0079CCB4 /* StageGGApp.swift in Sources */,
 				AE5E65F6262152720079CCB4 /* StageRow.swift in Sources */,
