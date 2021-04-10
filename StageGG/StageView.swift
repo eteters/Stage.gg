@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  StageView.swift
 //  StageGG
 //
 //  Created by Evan Teters on 4/9/21.
@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct StageView: View {
     var body: some View {
-        Text("Hello, world!")
+        Text("Hello, Stage!")
             .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct StageView_Preview: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        RulesView()
     }
 }

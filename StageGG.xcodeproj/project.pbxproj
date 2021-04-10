@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		AE5E65DC2621172D0079CCB4 /* StageGGApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E65DB2621172D0079CCB4 /* StageGGApp.swift */; };
-		AE5E65DE2621172D0079CCB4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E65DD2621172D0079CCB4 /* ContentView.swift */; };
 		AE5E65E02621172F0079CCB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE5E65DF2621172F0079CCB4 /* Assets.xcassets */; };
 		AE5E65E32621172F0079CCB4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE5E65E22621172F0079CCB4 /* Preview Assets.xcassets */; };
 		AE5E65EC26211CD70079CCB4 /* StageGGTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E65EB26211CD70079CCB4 /* StageGGTabs.swift */; };
+		AE5E65EF26214F370079CCB4 /* StageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E65EE26214F370079CCB4 /* StageView.swift */; };
+		AE5E65F226214F760079CCB4 /* RulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E65F126214F760079CCB4 /* RulesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AE5E65D82621172D0079CCB4 /* StageGG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StageGG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5E65DB2621172D0079CCB4 /* StageGGApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageGGApp.swift; sourceTree = "<group>"; };
-		AE5E65DD2621172D0079CCB4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AE5E65DF2621172F0079CCB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE5E65E22621172F0079CCB4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AE5E65E42621172F0079CCB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE5E65EB26211CD70079CCB4 /* StageGGTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageGGTabs.swift; sourceTree = "<group>"; };
+		AE5E65EE26214F370079CCB4 /* StageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageView.swift; sourceTree = "<group>"; };
+		AE5E65F126214F760079CCB4 /* RulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +58,8 @@
 			children = (
 				AE5E65DB2621172D0079CCB4 /* StageGGApp.swift */,
 				AE5E65EB26211CD70079CCB4 /* StageGGTabs.swift */,
-				AE5E65DD2621172D0079CCB4 /* ContentView.swift */,
+				AE5E65EE26214F370079CCB4 /* StageView.swift */,
+				AE5E65F126214F760079CCB4 /* RulesView.swift */,
 				AE5E65DF2621172F0079CCB4 /* Assets.xcassets */,
 				AE5E65E42621172F0079CCB4 /* Info.plist */,
 				AE5E65E12621172F0079CCB4 /* Preview Content */,
@@ -141,7 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE5E65DE2621172D0079CCB4 /* ContentView.swift in Sources */,
+				AE5E65F226214F760079CCB4 /* RulesView.swift in Sources */,
+				AE5E65EF26214F370079CCB4 /* StageView.swift in Sources */,
 				AE5E65EC26211CD70079CCB4 /* StageGGTabs.swift in Sources */,
 				AE5E65DC2621172D0079CCB4 /* StageGGApp.swift in Sources */,
 			);

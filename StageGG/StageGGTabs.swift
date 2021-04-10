@@ -10,15 +10,21 @@ import SwiftUI
 struct StageGGTabs: View {
     var body: some View {
         TabView {
-            ContentView()
+            StageView()
                 .tabItem {
-                    Label("Menu", systemImage: "list.dash")
+                    Label("Stages", systemImage: "list.dash")
                 }
 
-            ContentView()
+            RulesView()
                 .tabItem {
-                    Label("Order", systemImage: "square.and.pencil")
+                    Label("Rules", systemImage: "square.and.pencil")
                 }
         }
+    }
+}
+
+struct StageGGTabs_Previews: PreviewProvider {
+    static var previews: some View {
+        StageGGTabs()
     }
 }
