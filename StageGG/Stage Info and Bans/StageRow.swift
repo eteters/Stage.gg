@@ -13,7 +13,7 @@ struct StageRow: View {
     
     // Define the properties we need for a row
     struct Props {
-        let id: Int
+        let id: UUID
         let imageName: String
         var isBanned: Bool = false
         
