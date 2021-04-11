@@ -13,9 +13,8 @@ struct StageGGTabs: View {
     
     var body: some View {
         TabView {
-            NavigationView {
-                StageView(viewModel: viewModel)
-            }
+            
+            StageView(viewModel: viewModel)
             .tabItem {
                 Label("Stages & Bans", image: "Stage Icon Vector")
             }

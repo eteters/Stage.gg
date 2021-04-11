@@ -18,28 +18,28 @@ struct StageView: View {
     @State private var stageType = 0
     
     var body: some View {
-        ScrollView {
-            VStack {
-                Picker(selection: $stageType, label: Text("Stage Ban Phase")) {
+        NavigationView {
+            ScrollView {
+                VStack {
+                    Picker(selection: $stageType, label: Text("Stage Ban Phase")) {
+                        
+                        Text("Starters").tag(0)
+                        Text("Counterpicking").tag(1)
+                        
+                    }.pickerStyle(SegmentedPickerStyle())
+                    .padding()
                     
-                    Text("Starters").tag(0)
-                    Text("Counterpicking").tag(1)
-                    
-                }.pickerStyle(SegmentedPickerStyle())
-                .padding()
-                
-                ForEach(viewModel.stages, id: \.self) { stage in
-                    
-                    if(stageType == 0 && stage.stageInfo.category == .Starters && stage.isEnabled) {
-                        StageRow(props: StageRow.Props(stage: stage) )
-                    } else if (stageType == 1 && stage.isEnabled) {
-                        StageRow(props: StageRow.Props(stage: stage) )
+                    ForEach(viewModel.stages) { stage in
+                        
+                        if(stageType == 0 && stage.stageInfo.category == .Starters && stage.isEnabled) {
+                            StageRow(stage: stage )
+                        } else if (stageType == 1 && stage.isEnabled) {
+                            StageRow(stage: stage )
+                        }
                     }
                 }
-            }
-        }.navigationTitle(StageView.title)
-        
-    
+            }.navigationTitle(StageView.title)
+        }
     }
 }
 

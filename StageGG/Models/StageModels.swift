@@ -28,6 +28,9 @@ struct Stage: Identifiable, Hashable {
     var stageInfo: StageInfo
 
     var imageName: String
+    var image: Image {
+        Image(imageName)
+    }
     
     init(name:String, stageInfo: StageInfo, imageName: String, isEnabled: Bool = true, isBanned: Bool = false) {
         self.name = name
