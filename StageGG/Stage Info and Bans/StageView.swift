@@ -15,14 +15,29 @@ struct StageView: View {
 
     var stages: [Stage]
     
+    @State private var stageType = 0
+    
     var body: some View {
         ScrollView {
             VStack {
+                Picker(selection: $stageType, label: Text("Stage Ban Phase")) {
+                    
+                    Text("Starters").tag(0)
+                    Text("Counterpicking").tag(1)
+                    
+                }.pickerStyle(SegmentedPickerStyle())
+                .padding()
+                
                 ForEach(stages, id: \.self) { stage in
-                    StageRow(props: StageRow.Props(stage: stage) )
+                    if(stageType == 0 && stage.stageInfo.category == .Starters) {
+                        StageRow(props: StageRow.Props(stage: stage) )
+                    } else if (stageType == 1) {
+                        StageRow(props: StageRow.Props(stage: stage) )
+                    }
                 }
             }
         }.navigationTitle(StageView.title)
+    
     }
 }
 
