@@ -32,7 +32,7 @@ struct StageBanBox: View {
             .opacity(opacity)
             // The order of swiftUI chained calls means that the border won't change opacity even though it's part of this View.
             // Neat!
-            .border(Color.black, width: 4)
+            .border(Color.outlineBorderColor, width: 4)
     }
     
 }

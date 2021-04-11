@@ -16,6 +16,7 @@
 		AE5E65F6262152720079CCB4 /* StageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E65F5262152720079CCB4 /* StageRow.swift */; };
 		AE5E65FA262158D60079CCB4 /* StageModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E65F9262158D60079CCB4 /* StageModels.swift */; };
 		AEC983CC26223B2F00C5520D /* StageBanBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC983CB26223B2F00C5520D /* StageBanBox.swift */; };
+		AEC983D22622874900C5520D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC983D12622874900C5520D /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		AE5E65F5262152720079CCB4 /* StageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageRow.swift; sourceTree = "<group>"; };
 		AE5E65F9262158D60079CCB4 /* StageModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageModels.swift; sourceTree = "<group>"; };
 		AEC983CB26223B2F00C5520D /* StageBanBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageBanBox.swift; sourceTree = "<group>"; };
+		AEC983D12622874900C5520D /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		AE5E65DA2621172D0079CCB4 /* StageGG */ = {
 			isa = PBXGroup;
 			children = (
+				AEC983D02622873900C5520D /* Style */,
 				AE5E65F8262158B00079CCB4 /* Models */,
 				AE5E66192621E5600079CCB4 /* App */,
 				AE5E661A2621E56C0079CCB4 /* Stage Info and Bans */,
@@ -114,6 +117,14 @@
 				AE5E65F126214F760079CCB4 /* StageListView.swift */,
 			);
 			path = StageList;
+			sourceTree = "<group>";
+		};
+		AEC983D02622873900C5520D /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				AEC983D12622874900C5520D /* Colors.swift */,
+			);
+			path = Style;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE5E65FA262158D60079CCB4 /* StageModels.swift in Sources */,
+				AEC983D22622874900C5520D /* Colors.swift in Sources */,
 				AE5E65F226214F760079CCB4 /* StageListView.swift in Sources */,
 				AE5E65EF26214F370079CCB4 /* StageView.swift in Sources */,
 				AEC983CC26223B2F00C5520D /* StageBanBox.swift in Sources */,
