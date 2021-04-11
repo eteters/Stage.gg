@@ -19,7 +19,7 @@ struct StageView: View {
         ScrollView {
             VStack {
                 ForEach(stages, id: \.self) { stage in
-                    StageRow(props: StageRow.Props(stage: stages[0]) )
+                    StageRow(props: StageRow.Props(stage: stage) )
                 }
             }
         }.navigationTitle(StageView.title)
