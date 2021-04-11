@@ -38,7 +38,17 @@ struct StageView: View {
                         }
                     }
                 }
-            }.navigationTitle(StageView.title)
+            }.gesture(DragGesture(minimumDistance: 0.01, coordinateSpace: .local)
+                        .onEnded({ value in
+                            if value.translation.width < 0 {
+                                stageType = 1
+                            }
+
+                            if value.translation.width > 0 {
+                                stageType = 0
+                            }
+                        }))
+            .navigationTitle(StageView.title)
         }
     }
 }
