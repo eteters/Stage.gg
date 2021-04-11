@@ -26,13 +26,13 @@ struct StageListView: View {
             
             List(selection: $multiSelection){
                 Section(header: Text("Starters")){
-                    ForEach (stages) { stage in
+                    ForEach (stages.filter{$0.stageInfo.category == .Starters}) { stage in
                         Text(stage.name)
                     }
                 }
                 
                 Section(header: Text("CounterPicks")){
-                    ForEach(stages) { stage in
+                    ForEach(stages.filter({$0.stageInfo.category == .CounterPicks})) { stage in
                         Text(stage.name)
                     }
                 }
