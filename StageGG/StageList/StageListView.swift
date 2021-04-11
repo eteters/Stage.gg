@@ -13,16 +13,79 @@ struct StageListView: View {
     
     @State private var multiSelection = Set<UUID>()
     
+    //@State private var singleSelection : UUID?
+    
     var body: some View {
         
         NavigationView{
-            List(stages, selection: $multiSelection) {
-                Text($0.name)
+            
+            
+            
+            
+            
+            
+            List(selection: $multiSelection){
+                Section(header: Text("Starters")){
+                    ForEach (stages) { stage in
+                        Text(stage.name)
+                    }
+                }
+                
+                Section(header: Text("CounterPicks")){
+                    ForEach(stages) { stage in
+                        Text(stage.name)
+                    }
+                }
                 
             }
-            .navigationTitle("Starters")
+            
+            
+            
+            
+            
+            
+            
+            
+                
+            
+//            Section(header: Text("Starters")){
+//                List(stages, selection: $multiSelection){
+//
+//                }
+//            }
+            
+//            VStack{
+//
+//                Section(header: Text("Starters")){
+//                    List(stages, selection: $multiSelection){
+//
+//                        Text($0.name)
+//
+//
+//                    }
+//                }
+//
+//                Section(header: Text("CounterPick")){
+//
+//                }
+//
+//
+//            }
+            
+            
+            .listStyle(InsetGroupedListStyle())
+            .navigationTitle("Stage List")
             .toolbar { EditButton() }
+            
+            
+//            List(stages, selection: $multiSelection) {
+//                Text($0.name)
+//
+//            }
+            
+        
         }
+        
         
         
         
