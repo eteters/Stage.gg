@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42AE803E2622B7E0009D06DB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AE803D2622B7E0009D06DB /* DetailView.swift */; };
 		AE5E65DC2621172D0079CCB4 /* StageGGApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E65DB2621172D0079CCB4 /* StageGGApp.swift */; };
 		AE5E65E02621172F0079CCB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE5E65DF2621172F0079CCB4 /* Assets.xcassets */; };
 		AE5E65E32621172F0079CCB4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE5E65E22621172F0079CCB4 /* Preview Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42AE803D2622B7E0009D06DB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		AE5E65D82621172D0079CCB4 /* StageGG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StageGG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5E65DB2621172D0079CCB4 /* StageGGApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageGGApp.swift; sourceTree = "<group>"; };
 		AE5E65DF2621172F0079CCB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				AE5E65EE26214F370079CCB4 /* StageView.swift */,
 				AE5E65F5262152720079CCB4 /* StageRow.swift */,
 				AEC983CB26223B2F00C5520D /* StageBanBox.swift */,
+				42AE803D2622B7E0009D06DB /* DetailView.swift */,
 			);
 			path = "Stage Info and Bans";
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE5E65FA262158D60079CCB4 /* StageModels.swift in Sources */,
+				42AE803E2622B7E0009D06DB /* DetailView.swift in Sources */,
 				AEC983D22622874900C5520D /* Colors.swift in Sources */,
 				AE5E65F226214F760079CCB4 /* StageListView.swift in Sources */,
 				AE5E65EF26214F370079CCB4 /* StageView.swift in Sources */,

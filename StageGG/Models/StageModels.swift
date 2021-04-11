@@ -38,6 +38,12 @@ struct StageInfo: Hashable {
     var sizeClass: StageSizeClass
     
     var category: StageCategory
+    
+    var description: String
+    
+    var loves: String
+    
+    var hates: String
 }
 
 enum StageSizeClass {
