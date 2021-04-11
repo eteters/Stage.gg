@@ -9,18 +9,18 @@ import SwiftUI
 
 struct StageGGTabs: View {
     
-    var stages: [Stage]
+    @ObservedObject var viewModel: AppViewModel
     
     var body: some View {
         TabView {
             NavigationView {
-                StageView(stages: stages)
+                StageView(viewModel: viewModel)
             }
             .tabItem {
                 Label("Stages & Bans", image: "Stage Icon Vector")
             }
 
-            StageListView(stages: stages)
+            StageListView(viewModel: viewModel)
                 .tabItem {
                     Label("Stage List", systemImage: "list.bullet")
                 }
@@ -28,8 +28,8 @@ struct StageGGTabs: View {
     }
 }
 
-struct StageGGTabs_Previews: PreviewProvider {
-    static var previews: some View {
-        StageGGTabs(stages: stages)
-    }
-}
+//struct StageGGTabs_Previews: PreviewProvider {
+//    static var previews: some View {
+//        StageGGTabs(stages: stages)
+//    }
+//}

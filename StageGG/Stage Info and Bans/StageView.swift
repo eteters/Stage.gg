@@ -13,7 +13,7 @@ import SwiftUI
 struct StageView: View {
     static let title = "Stages"
 
-    var stages: [Stage]
+    @ObservedObject var viewModel: AppViewModel
     
     @State private var stageType = 0
     
@@ -28,10 +28,11 @@ struct StageView: View {
                 }.pickerStyle(SegmentedPickerStyle())
                 .padding()
                 
-                ForEach(stages, id: \.self) { stage in
-                    if(stageType == 0 && stage.stageInfo.category == .Starters) {
+                ForEach(viewModel.stages, id: \.self) { stage in
+                    
+                    if(stageType == 0 && stage.stageInfo.category == .Starters && stage.isEnabled) {
                         StageRow(props: StageRow.Props(stage: stage) )
-                    } else if (stageType == 1) {
+                    } else if (stageType == 1 && stage.isEnabled) {
                         StageRow(props: StageRow.Props(stage: stage) )
                     }
                 }
@@ -42,8 +43,8 @@ struct StageView: View {
     }
 }
 
-struct StageView_Preview: PreviewProvider {
-    static var previews: some View {
-        StageView(stages: stages)
-    }
-}
+//struct StageView_Preview: PreviewProvider {
+//    static var previews: some View {
+//        StageView(stages: stages)
+//    }
+//}

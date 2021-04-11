@@ -9,7 +9,7 @@ import SwiftUI
 
 struct StageListView: View {
     
-    var stages: [Stage]
+    @ObservedObject var viewModel: AppViewModel
     
     @State private var multiSelection = Set<UUID>()
         
@@ -18,25 +18,33 @@ struct StageListView: View {
         NavigationView {
                List(selection: $multiSelection) {
                 Section(header: Text("Starters")) {
-                    ForEach (stages.filter { $0.stageInfo.category == .Starters } ) { stage in
+                    ForEach (viewModel.stages.filter { $0.stageInfo.category == .Starters } ) { stage in
                         Text(stage.name)
                     }
                 }
                 
                 Section(header: Text("CounterPicks")) {
-                    ForEach(stages.filter( {$0.stageInfo.category == .CounterPicks } )) { stage in
+                    ForEach(viewModel.stages.filter( {$0.stageInfo.category == .CounterPicks } )) { stage in
                         Text(stage.name)
                     }
                 }
-                
-            }
+               }
+               .onChange(of: multiSelection) { (uuids) in
+                for (index, stage) in viewModel.stages.enumerated() {
+                    if uuids.contains(stage.id) {
+                        viewModel.stages[index].isEnabled = true
+                    } else {
+                        viewModel.stages[index].isEnabled = false
+                    }
+                }
+               }
             .listStyle(InsetGroupedListStyle())
             .navigationTitle("Stage List")
             .environment(\.editMode, Binding.constant(EditMode.active))
             //https://stackoverflow.com/questions/56691630/swiftui-state-var-initialization-issue
             .onAppear(perform: {
                 multiSelection = Set(
-                    stages.compactMap({ (stage) -> UUID? in
+                    viewModel.stages.compactMap({ (stage) -> UUID? in
                         if (stage.isEnabled) {
                             return stage.id
                         } else {
@@ -45,14 +53,15 @@ struct StageListView: View {
                     })
                 )
                })
+               
         }
     }
 }
 
-struct RulesView_Previews: PreviewProvider {
-    static var previews: some View {
-        StageListView(stages: stages)
-    }
-}
+//struct RulesView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        StageListView(stages: stages)
+//    }
+//}
 
 

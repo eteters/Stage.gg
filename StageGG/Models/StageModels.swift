@@ -7,7 +7,15 @@
 
 import SwiftUI
 
-// TODO: Add all the StageInfo we want 
+// TODO: Add all the StageInfo we want
+
+class AppViewModel: ObservableObject {
+    @Published var stages: [Stage]
+    
+    init(stages: [Stage]) {
+        self.stages = stages
+    }
+}
 
 struct Stage: Identifiable, Hashable {
     let id = UUID()
@@ -32,6 +40,7 @@ struct Stage: Identifiable, Hashable {
     static func == (lhs: Stage, rhs: Stage) -> Bool {
         return lhs.id == rhs.id
     }
+    
 }
 
 struct StageInfo: Hashable {

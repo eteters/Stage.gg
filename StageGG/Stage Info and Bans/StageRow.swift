@@ -46,8 +46,8 @@ struct StageRow: View {
     }
 }
 
-struct StageRow_Previews: PreviewProvider {
-    static var previews: some View {
-        StageRow(props: StageRow.Props(stage: stages[0]))
-    }
-}
+//struct StageRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        StageRow(props: StageRow.Props(stage: stages[0]))
+//    }
+//}
