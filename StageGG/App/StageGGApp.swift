@@ -18,7 +18,13 @@ var stages: [Stage] = [
     Stage(name: "Smashville", stageInfo: StageInfo(sizeClass: .Medium, category: .Starters), imageName: "sv_stage_image" ),
     Stage(name: "Town and City", stageInfo: StageInfo(sizeClass: .Medium, category: .Starters), imageName: "tc_stage_image" ),
     Stage(name: "Small Battlefield", stageInfo: StageInfo(sizeClass: .Medium, category: .Starters), imageName: "sb_stage_image" ),
-    Stage(name: "Kalos Pokémon League", stageInfo: StageInfo(sizeClass: .Large, category: .CounterPicks), imageName: "kalos_stage_image" )
+    Stage(name: "Kalos Pokémon League", stageInfo: StageInfo(sizeClass: .Large, category: .CounterPicks), imageName: "kalos_stage_image" ),
+    Stage(name: "Yoshi's Story", stageInfo: StageInfo(sizeClass: .Large, category: .CounterPicks), imageName: "ys_stage_image" ),
+    Stage(name: "Yoshi's Island", stageInfo: StageInfo(sizeClass: .Large, category: .CounterPicks), imageName: "yi_stage_image" ),
+    Stage(name: "Lylat Cruise", stageInfo: StageInfo(sizeClass: .Large, category: .CounterPicks), imageName: "ly_stage_image" ),
+    Stage(name: "Unova Pokemon League", stageInfo: StageInfo(sizeClass: .Large, category: .CounterPicks), imageName: "kalos_stage_image" ),
+    Stage(name: "WarioWare, Inc.", stageInfo: StageInfo(sizeClass: .Large, category: .CounterPicks), imageName: "ww_stage_image" ),
+    Stage(name: "Castle Siege", stageInfo: StageInfo(sizeClass: .Large, category: .CounterPicks), imageName: "cs_stage_image" )
 ]
 
 @main
