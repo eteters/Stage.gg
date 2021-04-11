@@ -41,6 +41,16 @@ struct Stage: Identifiable, Hashable {
         return lhs.id == rhs.id
     }
     
+    // Preview Generators
+    static func oneStage() -> Stage {
+        return Stage(name: "Final Destination", stageInfo: StageInfo(sizeClass: .Medium, category: .Starters, description: "platforms", loves: "Mario", hates: "Luigi"), imageName: "fd_stage_image" )
+    }
+    
+    static func multiStage(count: Int) -> [Stage] {
+        let stage = oneStage()
+        return Array.init(repeating: stage, count: count)
+    }
+    
 }
 
 struct StageInfo: Hashable {

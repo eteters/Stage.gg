@@ -43,8 +43,8 @@ struct StageView: View {
     }
 }
 
-//struct StageView_Preview: PreviewProvider {
-//    static var previews: some View {
-//        StageView(stages: stages)
-//    }
-//}
+struct StageView_Preview: PreviewProvider {
+    static var previews: some View {
+        StageView(viewModel: AppViewModel(stages: Stage.multiStage(count: 5)))
+    }
+}

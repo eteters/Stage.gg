@@ -46,7 +46,7 @@ struct DetailView: View {
 
 struct DetailView_Preview: PreviewProvider {
     static var previews: some View {
-        DetailView(stage: stages[0])
+        DetailView(stage: Stage.oneStage())
     }
 }
 

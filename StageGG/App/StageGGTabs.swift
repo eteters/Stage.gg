@@ -28,8 +28,8 @@ struct StageGGTabs: View {
     }
 }
 
-//struct StageGGTabs_Previews: PreviewProvider {
-//    static var previews: some View {
-//        StageGGTabs(stages: stages)
-//    }
-//}
+struct StageGGTabs_Previews: PreviewProvider {
+    static var previews: some View {
+        StageGGTabs(viewModel: AppViewModel(stages: Stage.multiStage(count: 5)))
+    }
+}

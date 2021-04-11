@@ -58,10 +58,10 @@ struct StageListView: View {
     }
 }
 
-//struct RulesView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        StageListView(stages: stages)
-//    }
-//}
+struct RulesView_Previews: PreviewProvider {
+    static var previews: some View {
+        StageListView(viewModel: AppViewModel(stages: Stage.multiStage(count: 5)))
+    }
+}
 
 
