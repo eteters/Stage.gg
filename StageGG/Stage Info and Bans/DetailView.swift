@@ -24,6 +24,7 @@ struct DetailView: View {
                 Spacer()
                     .frame(height: 150)
                 Text(stage.stageInfo.description)
+                    .padding(.horizontal, 40)
                 Spacer()
                     .frame(height: 80)
                 Text("Loves: " + stage.stageInfo.loves)
