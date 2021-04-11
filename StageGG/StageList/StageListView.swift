@@ -12,87 +12,41 @@ struct StageListView: View {
     var stages: [Stage]
     
     @State private var multiSelection = Set<UUID>()
-    
-    //@State private var singleSelection : UUID?
-    
+        
     var body: some View {
         
-        NavigationView{
-            
-            
-            
-            
-            
-            
-            List(selection: $multiSelection){
-                Section(header: Text("Starters")){
-                    ForEach (stages.filter{$0.stageInfo.category == .Starters}) { stage in
+        NavigationView {
+               List(selection: $multiSelection) {
+                Section(header: Text("Starters")) {
+                    ForEach (stages.filter { $0.stageInfo.category == .Starters } ) { stage in
                         Text(stage.name)
                     }
                 }
                 
-                Section(header: Text("CounterPicks")){
-                    ForEach(stages.filter({$0.stageInfo.category == .CounterPicks})) { stage in
+                Section(header: Text("CounterPicks")) {
+                    ForEach(stages.filter( {$0.stageInfo.category == .CounterPicks } )) { stage in
                         Text(stage.name)
                     }
                 }
                 
             }
-            
-            
-            
-            
-            
-            
-            
-            
-                
-            
-//            Section(header: Text("Starters")){
-//                List(stages, selection: $multiSelection){
-//
-//                }
-//            }
-            
-//            VStack{
-//
-//                Section(header: Text("Starters")){
-//                    List(stages, selection: $multiSelection){
-//
-//                        Text($0.name)
-//
-//
-//                    }
-//                }
-//
-//                Section(header: Text("CounterPick")){
-//
-//                }
-//
-//
-//            }
-            
-            
             .listStyle(InsetGroupedListStyle())
             .navigationTitle("Stage List")
-            .toolbar { EditButton() }
-            
-            
-//            List(stages, selection: $multiSelection) {
-//                Text($0.name)
-//
-//            }
-            
-        
+            .environment(\.editMode, Binding.constant(EditMode.active))
+            //https://stackoverflow.com/questions/56691630/swiftui-state-var-initialization-issue
+            .onAppear(perform: {
+                multiSelection = Set(
+                    stages.compactMap({ (stage) -> UUID? in
+                        if (stage.isEnabled) {
+                            return stage.id
+                        } else {
+                            return nil
+                        }
+                    })
+                )
+               })
         }
-        
-        
-        
-        
-        
-        
     }
-    
 }
 
 struct RulesView_Previews: PreviewProvider {
