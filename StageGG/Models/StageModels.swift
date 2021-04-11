@@ -9,8 +9,8 @@ import SwiftUI
 
 // TODO: Add all the StageInfo we want 
 
-struct Stage {
-    var id: Int
+struct Stage: Identifiable {
+    let id = UUID()
     var name: String
     
     var isEnabled: Bool
@@ -22,8 +22,8 @@ struct Stage {
         Image(imageName)
     }
     
-    init(id:Int, name:String, stageInfo: StageInfo, imageName: String, isEnabled: Bool = true) {
-        self.id = id
+    init(name:String, stageInfo: StageInfo, imageName: String, isEnabled: Bool = true) {
+        
         self.name = name
         self.stageInfo = stageInfo
         self.imageName = imageName

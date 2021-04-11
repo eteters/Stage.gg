@@ -9,14 +9,23 @@ import SwiftUI
 
 struct StageListView: View {
     
-    @State var stages: [Stage]
+    var stages: [Stage]
+    
+    @State private var multiSelection = Set<UUID>()
     
     var body: some View {
-        List {
-            Text(stages[0].name)
-            Text(stages[1].name)
-            
+        
+        NavigationView{
+            List(stages, selection: $multiSelection) {
+                Text($0.name)
+                
+            }
+            .navigationTitle("Starters")
+            .toolbar { EditButton() }
         }
+        
+        
+        
         
         
     }
