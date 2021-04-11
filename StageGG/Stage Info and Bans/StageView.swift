@@ -11,16 +11,18 @@ import SwiftUI
 // StageView should take in a list or an object with a list on it 
 
 struct StageView: View {
-    
+    static let title = "Stages"
+
     var stages: [Stage]
     
     var body: some View {
-        VStack {
-            Text("Hello, Stage1!")
-                .padding()
-            Text("Hello, Stage2!")
-                .padding()
-        }
+        ScrollView {
+            VStack {
+                ForEach(stages, id: \.self) { stage in
+                    StageRow(props: StageRow.Props(stage: stages[0]) )
+                }
+            }
+        }.navigationTitle(StageView.title)
     }
 }
 

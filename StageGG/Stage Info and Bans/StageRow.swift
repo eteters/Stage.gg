@@ -16,26 +16,38 @@ struct StageRow: View {
         let id: Int
         let imageName: String
         var isBanned: Bool = false
+        
+        var image: Image {
+            Image(imageName)
+        }
+        
+        init(stage: Stage) {
+            id = stage.id
+            imageName = stage.imageName
+            isBanned = stage.isBanned
+        }
     }
     // instance of our props
     var props: Props
     
     var body: some View {
         HStack {
-            Image(uiImage: UIImage(named: props.imageName)!)
+            props.image
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(height: 112)
+                .clipped()
             
             // note that the checkbox isn't passing up the ban state rn
             StageBanBox(isBanned: props.isBanned)
                 .padding()
+            Spacer()
         }
     }
 }
 
 struct StageRow_Previews: PreviewProvider {
     static var previews: some View {
-        StageRow(props: StageRow.Props(id: 0, imageName: "fd_stage_image"))
+        StageRow(props: StageRow.Props(stage: stages[0]))
     }
 }

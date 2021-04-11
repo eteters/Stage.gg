@@ -9,29 +9,32 @@ import SwiftUI
 
 // TODO: Add all the StageInfo we want 
 
-struct Stage: Identifiable {
+struct Stage: Identifiable, Hashable {
     let id = UUID()
+
     var name: String
     
     var isEnabled: Bool
+    var isBanned: Bool = false
 
     var stageInfo: StageInfo
 
-    private var imageName: String
-    var image: Image {
-        Image(imageName)
-    }
+    var imageName: String
     
-    init(name:String, stageInfo: StageInfo, imageName: String, isEnabled: Bool = true) {
-        
+    init(name:String, stageInfo: StageInfo, imageName: String, isEnabled: Bool = true, isBanned: Bool = false) {
         self.name = name
         self.stageInfo = stageInfo
         self.imageName = imageName
         self.isEnabled = isEnabled
     }
+    
+    // Hashable
+    static func == (lhs: Stage, rhs: Stage) -> Bool {
+        return lhs.id == rhs.id
+    }
 }
 
-struct StageInfo {
+struct StageInfo: Hashable {
     var sizeClass: StageSizeClass
     
     var category: StageCategory

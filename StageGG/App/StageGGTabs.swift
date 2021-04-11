@@ -13,10 +13,12 @@ struct StageGGTabs: View {
     
     var body: some View {
         TabView {
-            StageView(stages: stages)
-                .tabItem {
-                    Label("Stages & Bans", image: "Stage Icon Vector")
-                }
+            NavigationView {
+                StageView(stages: stages)
+            }
+            .tabItem {
+                Label("Stages & Bans", image: "Stage Icon Vector")
+            }
 
             StageListView(stages: stages)
                 .tabItem {
