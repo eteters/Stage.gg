@@ -22,7 +22,7 @@ var stages: [Stage] = [
     Stage(name: "Yoshi's Story", stageInfo: StageInfo(sizeClass: .Large, category: .CounterPicks), imageName: "ys_stage_image" ),
     Stage(name: "Yoshi's Island", stageInfo: StageInfo(sizeClass: .Large, category: .CounterPicks), imageName: "yi_stage_image" ),
     Stage(name: "Lylat Cruise", stageInfo: StageInfo(sizeClass: .Large, category: .CounterPicks), imageName: "ly_stage_image" ),
-    Stage(name: "Unova Pokemon League", stageInfo: StageInfo(sizeClass: .Large, category: .CounterPicks), imageName: "kalos_stage_image" ),
+    Stage(name: "Unova Pokemon League", stageInfo: StageInfo(sizeClass: .Large, category: .CounterPicks), imageName: "unova_stage_image" ),
     Stage(name: "WarioWare, Inc.", stageInfo: StageInfo(sizeClass: .Large, category: .CounterPicks), imageName: "ww_stage_image" ),
     Stage(name: "Castle Siege", stageInfo: StageInfo(sizeClass: .Large, category: .CounterPicks), imageName: "cs_stage_image" )
 ]
