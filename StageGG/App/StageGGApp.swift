@@ -17,7 +17,8 @@ var stages: [Stage] = [
     Stage(name: "Pokemon Stadium 2", stageInfo: StageInfo(sizeClass: .Medium, category: .Starters), imageName: "ps2_stage_image" ),
     Stage(name: "Smashville", stageInfo: StageInfo(sizeClass: .Medium, category: .Starters), imageName: "sv_stage_image" ),
     Stage(name: "Town and City", stageInfo: StageInfo(sizeClass: .Medium, category: .Starters), imageName: "tc_stage_image" ),
-    Stage(name: "Small Battlefield", stageInfo: StageInfo(sizeClass: .Medium, category: .Starters), imageName: "sb_stage_image" )
+    Stage(name: "Small Battlefield", stageInfo: StageInfo(sizeClass: .Medium, category: .Starters), imageName: "sb_stage_image" ),
+    Stage(name: "Kalos Pokémon League", stageInfo: StageInfo(sizeClass: .Large, category: .CounterPicks), imageName: "kalos_stage_image" )
 ]
 
 @main
